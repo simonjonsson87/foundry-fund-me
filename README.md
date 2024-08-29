@@ -11,3 +11,8 @@ For the above to work the line below needs to be added under [profile.default] i
 ```
 remappings = ['@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/']
 ```
+
+To print console.log when running a test, you need at least double v's:
+```
+forge test -vv
+```
