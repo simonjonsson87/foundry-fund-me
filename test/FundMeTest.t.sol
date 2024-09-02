@@ -17,4 +17,11 @@ contract FundMeTest is Test {
     function testOwnerIsSender() public {
         assertEq(fundMe.i_owner(), address(this));
     }
+
+    // Commented out because it must be run on the Sepolia chain
+    /*
+    function testPriceFeedVersionIsAccurate() public {
+        assertEq(fundMe.getVersion(), 4);
+    }
+    */
 }
